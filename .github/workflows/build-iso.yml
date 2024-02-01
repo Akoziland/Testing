@@ -1,7 +1,11 @@
 on: [push]
 
-name: 'Build ISO'
-description: 'Build the Akoziland core iso.'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Build ISO
+    description: 'Build the Akoziland core iso.'
+    steps:
+      runs:
+        using: 'docker'
+        image: 'Dockerfile'
