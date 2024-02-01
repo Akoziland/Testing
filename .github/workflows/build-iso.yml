@@ -1,0 +1,5 @@
+name: 'Build ISO'
+description: 'Build the Akoziland core iso.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
